@@ -1,0 +1,92 @@
+.NavbarContainer {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.NavbarContainer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 44px;
+    margin: 0 12rem;
+    padding: 0;
+}
+
+.NavbarContainer ul a {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.NavbarContainer ul img {
+    width: 15px;
+    margin-top: 6px;
+    filter: invert(1);
+}
+
+.hamburger {
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 2s ease-in-out;
+    /* transition-timing-function: ease-out; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .NavbarContainer ul {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .NavbarContainer ul {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: black;
+        margin: 0;
+    }
+
+    .NavbarContainer.expanded ul {
+        display: block;
+    }
+
+    .NavbarContainer.expanded ul .NavIcon {
+        display: none;
+    }
+
+    .NavbarContainer.expanded ul li:nth-child(n)::after {
+        content: '';
+        display: block;
+        height: 1px;
+        margin: 0.5rem 4rem;
+        background: #939393;
+    }
+
+    .NavbarContainer ul a {
+        color: white;
+        font-size: 16px;
+        font-weight: 200;
+        width: 100%;
+        margin: 1rem 4rem;
+        padding: 1.5rem 0;
+    }
+
+}

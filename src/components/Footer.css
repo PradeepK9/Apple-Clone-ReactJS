@@ -1,0 +1,93 @@
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b8b1b1;
+    height: 7rem;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.FooterLinks {
+    flex-basis: 52%;
+    padding: 0;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.FooterLinks a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    border-right: 1px solid rgb(124, 121, 121);
+    padding: 0 10px;
+}
+
+.FooterLinks a:last-child {
+    border-right: none;
+}
+
+.FooterLinks a:hover {
+    text-decoration: underline;
+}
+
+.Footer p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.Footer p:first-child {
+    color: rgb(45, 42, 87);
+}
+
+.Footer .Owner,
+.Footer p:last-child {
+    color: rgb(236, 18, 18);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .FooterLinks {
+        flex-basis: unset;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Footer {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .FooterLinks {
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+        order: 3;
+    }
+
+    .Footer p {
+        text-align: left;
+    }
+
+    .FooterLinks a:first-child {
+        padding-left: 0;
+    }
+    .Footer p:first-child{
+        order: 2;
+    }
+    .Footer p:last-child{
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .Footer .Owner::before {
+        content: "\a";
+        white-space: pre;
+    }
+}

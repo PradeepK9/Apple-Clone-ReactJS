@@ -1,0 +1,113 @@
+.HomeCard {
+    width: 650px;
+    background-color: #f5f5f7;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.Black {
+    background-color: black;
+}
+
+.Grey {
+    background-color: rgb(230, 220, 220);
+}
+
+.Grey img,
+.Grey .CardHeading,
+.Grey .CardHeading h2 {
+    margin: 0;
+}
+
+.Grey .Offer {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #e0005e;
+}
+
+.CardHeading {
+    margin-top: 1rem;
+}
+
+.CardHeading img {
+    width: 2rem;
+}
+
+.Black .CardHeading img {
+    filter: invert(1);
+}
+
+.Black .CardHeading h2,
+.Black h4 {
+    color: white;
+}
+
+.CardHeading h2 {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.HomeCard .Series {
+    margin: 0;
+    color: red;
+    font-weight: 700;
+}
+
+.HomeCard h4 {
+    margin: .5rem;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.HomeCard .Decription2 {
+    margin: .5rem;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(135, 136, 136);
+}
+
+.CardLinks a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+}
+
+.CardLinks a:hover {
+    text-decoration: underline;
+}
+
+.CardLinks a:last-child {
+    margin-left: 2rem;
+}
+
+.CardImg img {
+    width: 100%;
+    max-width: 650px;
+    height: 580px;
+    object-fit: cover;
+    object-position: bottom;
+    margin-top: 2rem;
+}
+
+.CardVideo video {
+    width: 100%;
+    max-width: 650px;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .HomeCard {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .CardImg img {
+        height: auto;
+    }
+
+    .CardVideo video {
+        height: auto;
+    }
+}

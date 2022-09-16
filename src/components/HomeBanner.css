@@ -1,0 +1,103 @@
+.HomeBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.whiteBG {
+    background-color: white;
+    color: black;
+}
+
+.MultiImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Hero_Img img {
+    margin: 35px;
+    max-width: 550px;
+    max-height: 550px;
+}
+
+.Headings h1 {
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.Headings h3 {
+    font-size: 28px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-top: 6px;
+}
+
+.Headings p {
+    color: #86868b;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    font-size: 21px;
+    line-height: 0.5;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.Links a {
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 500;
+    color: #4991df;
+}
+
+.Links a:hover {
+    text-decoration: underline;
+}
+
+.Links .leftLink {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .Hero_Img img {
+        max-width: 220px;
+    }
+
+    .MultiImg img {
+        max-width: 140px;
+        margin: 10px 0;
+    }
+
+    .Headings h1 {
+        font-size: 30px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .Headings h3 {
+        font-size: 21px;
+        margin: 0;
+    }
+
+    .Headings p {
+        font-size: 16px;
+        margin: 10px auto;
+        line-height: 1.0;
+    }
+
+    .Links a {
+        font-size: 18px;
+    }
+}

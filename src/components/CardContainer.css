@@ -1,0 +1,8 @@
+.CardContainer {
+    display: flex;
+    background-color: white;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
